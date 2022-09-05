@@ -1,0 +1,6 @@
+<h2>Upload image and pdf</h2>
+<form action="." method="POST" enctype="multipart/form-data">
+    {{ form.as_p }}
+    {% csrf_token %}
+    <p><input type="submit" value="Submit"></p>
+</form>
